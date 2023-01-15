@@ -8,11 +8,11 @@ import {
   TextInput,
 } from "react-native";
 import { useState } from "react";
-import { validateEmail } from "../utils";
+import { validated } from "../utils";
 
 export const Newsletter = () => {
   const [emailInput, setEmailInput] = useState("");
-  const isEmailValid = validateEmail(emailInput);
+  const isEmailValid = validated(emailInput);
 
   return (
     <KeyboardAvoidingView style={styles.container}>
